@@ -1,12 +1,8 @@
-from baseline.py import Baseline
-#from superstrategy.py import SuperStrategy
-from overnight.py import Overnight
-from strategy.py import Strategy
-
+import settings
 
 class State(object):
     
-    def __init__(self, attributes):
+    def __init__(self, row):
         ''' Initialize the state.'''
         
         self.date = float(row[0])
